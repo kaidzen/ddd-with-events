@@ -1,12 +1,12 @@
 package org.kaidzen.study.meetup.domen.aggregate;
 
 public class Speech {
-    private final String title;
-    private final String urlValue;
+    private final Title title;
+    private final UrlValue urlValue;
     private final String description;
-    private final String speechType;
+    private final SpeechType speechType;
 
-    public Speech(String title, String urlValue, String description, String speechType) {
+    public Speech(Title title, UrlValue urlValue, String description, SpeechType speechType) {
 
         this.title = title;
         this.urlValue = urlValue;
@@ -14,11 +14,11 @@ public class Speech {
         this.speechType = speechType;
     }
 
-    public String getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public String getUrlValue() {
+    public UrlValue getUrlValue() {
         return urlValue;
     }
 
@@ -26,7 +26,7 @@ public class Speech {
         return description;
     }
 
-    public String getSpeechType() {
+    public SpeechType getSpeechType() {
         return speechType;
     }
 }
